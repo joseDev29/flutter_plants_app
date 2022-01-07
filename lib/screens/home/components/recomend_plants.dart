@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:plant_app/constants.dart';
+import 'package:plant_app/screens/details/details_screen.dart';
 
 class RecomendPlants extends StatelessWidget {
   const RecomendPlants({
@@ -19,21 +20,36 @@ class RecomendPlants extends StatelessWidget {
             title: 'Samantha',
             country: 'Russia',
             price: 440,
-            onPress: () {},
+            onPress: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const DetailsScreen()));
+            },
           ),
           RecomendedCard(
             image: "assets/images/image_2.png",
             title: 'Angelica',
             country: 'Endgland',
             price: 320,
-            onPress: () {},
+            onPress: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const DetailsScreen()));
+            },
           ),
           RecomendedCard(
             image: "assets/images/image_3.png",
             title: 'Bertha',
             country: 'Normandia',
             price: 580,
-            onPress: () {},
+            onPress: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const DetailsScreen()));
+            },
           )
         ],
       ),

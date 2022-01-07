@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'package:plant_app/constants.dart';
 import 'package:plant_app/screens/home/components/header.dart';
 import 'package:plant_app/screens/home/components/section_title.dart';
 import 'package:plant_app/screens/home/components/recomend_plants.dart';
+import 'package:plant_app/screens/home/components/featured_plants.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -22,7 +24,9 @@ class Body extends StatelessWidget {
           ),
           const RecomendPlants(),
           SectionTitle(
-              title: 'Featured Plants', buttonText: 'More', btnAction: () {})
+              title: 'Featured Plants', buttonText: 'More', btnAction: () {}),
+          const FeaturedPlants(),
+          const SizedBox(height: kDefaultPadding)
         ],
       ),
     );

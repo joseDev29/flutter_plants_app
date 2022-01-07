@@ -47,7 +47,7 @@ class HeaderTitle extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Text(
-            'Hi!',
+            'Welcome!',
             style: Theme.of(context)
                 .textTheme
                 .headline5!
